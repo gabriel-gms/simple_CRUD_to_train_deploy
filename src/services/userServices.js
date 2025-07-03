@@ -7,3 +7,11 @@ export const getAllUsers = ()=>{
         return false 
     }
 }
+
+export const getOneUser = (id)=>{
+    try {
+        return user.findById(id)
+    } catch (error) {
+        return false
+    }
+}

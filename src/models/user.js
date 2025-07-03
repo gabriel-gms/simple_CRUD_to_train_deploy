@@ -1,7 +1,7 @@
 import mongoose from "mongoose"
 
 const User = mongoose.model('User', {
-    name: String,
+    nome: String,
     idade: String,
     salario: String,
 })
