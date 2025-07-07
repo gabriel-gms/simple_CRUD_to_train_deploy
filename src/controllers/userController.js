@@ -11,7 +11,7 @@ export const getAll = async (req, res)=>{
 }
 
 export const getOne = async (req, res)=>{
-    const { id } = req.params.id
+    const { id } = req.params
 
     const user = await userServices.getOneUser(id)
     if(user){
